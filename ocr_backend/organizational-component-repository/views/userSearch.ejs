@@ -1,0 +1,30 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Component Search Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Use</th>
+                <th>Technologies</th>
+                <th>Tags</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% components.forEach(component => { %>
+                <tr>
+                    <td><%= component.name %></td>
+                    <td><%= component.use %></td>
+                    <td><%= component.technologies %></td>
+                    <td><%= component.tags.join(', ') %></td>
+                    <td><a href="/user/components/<%= component.id %>">View Details</a></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

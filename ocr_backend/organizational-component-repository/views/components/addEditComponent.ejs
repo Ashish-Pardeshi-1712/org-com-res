@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Add/Edit Component</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Add/Edit Component</h1>
+    <form action="/admin/components" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="use">Use:</label>
+        <textarea id="use" name="use" rows="4" required></textarea><br><br>
+
+        <label for="technologies">Technologies Used:</label>
+        <input type="text" id="technologies" name="technologies" required><br><br>
+
+        <label for="tags">Tags (up to 5, comma-separated):</label>
+        <input type="text" id="tags" name="tags"><br><br>
+
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
