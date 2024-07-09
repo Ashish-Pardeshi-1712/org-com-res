@@ -1,0 +1,105 @@
+.dbHeading{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.cardsOuterDiv{
+    width: 95%;
+    height: 80vh;
+    margin: auto;
+    overflow-y: scroll;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cardsOuterDiv::-webkit-scrollbar{
+    display: none;
+}
+.cardsDiv{
+    width: 30%;
+    height: 200px;
+    border: 1px solid orangered;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+.cardName{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+.labelName{
+    font-weight: 500;
+}
+.descLabel{
+    height: 120px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+.lgOutBtn{
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: purple;
+    display: flex;
+    gap: 5px;
+}
+.actionIcons{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.actionIcons>span{
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.crossBtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.Overlay{
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalFieldsDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modalFieldsDiv>div{
+    width: 80%!important;
+}
+.updateBtn{
+    display: flex;
+    justify-content: center;
+}
+.helloUser{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
